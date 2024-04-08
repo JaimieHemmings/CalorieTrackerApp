@@ -280,7 +280,7 @@ class Storage {
 
     static saveWorkout(workout) {
         const workouts = Storage.getWorkouts();
-        workout.push(workout);
+        workouts.push(workout);
         localStorage.setItem('workouts', JSON.stringify(workouts));
     }
 
